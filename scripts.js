@@ -14,7 +14,7 @@ function go() {
   tl.play();
 }
 
-tl.to(nonChoice1, 0.8, {
+tl.to(nonChoice1, 0.5, {
   autoAlpha: 0,
   height: 0,
   ease: Power2.easeInOut
@@ -22,7 +22,7 @@ tl.to(nonChoice1, 0.8, {
 
 tl.to(
   nonChoice2,
-  0.8,
+  0.5,
   {
     autoAlpha: 0,
     height: 0,
@@ -38,7 +38,7 @@ tl.to(
     width: '654px',
     ease: Power2.easeOut
   },
-  '-=0.3'
+  '-=0.5'
 );
 
 tl.to(choiceFill, 1.4, {
