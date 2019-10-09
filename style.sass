@@ -1,0 +1,55 @@
+@import 'globals'
+@import 'mixins'
+@import 'vars'
+
+// - Layout Properties (position, float, clear, display)
+// - Box Model Properties (width, height, margin, padding)
+// - Visual Properties (color, background, border, box-shadow)
+// - Typography Properties (font-size, font-family, text-align, text-transform)
+// - Misc Properties (cursor, overflow, z-index)
+
+header
+  position: fixed
+
+main
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+
+.question-main
+  text-align: center
+  font-size: pxRem(44px)
+  margin-top: 0
+  margin-bottom: pxRem(50px)
+
+.pref-question__options
+  display: flex
+  justify-content: space-around
+
+  max-width: pxRem(654px)
+  margin: 0 auto
+  margin-bottom: pxRem(30px)
+
+.pref-question__option
+  margin-right: pxRem(30px)
+  width: pxRem(193px)
+  height: pxRem(82px)
+
+  box-shadow: 0 0 12px rgba(0,0,0,0.1)
+  border: none
+  border-left: 4px solid pink
+  background: #fff
+
+  font-family: 'Muli', sans-serif
+  font-size: pxRem(17.8px)
+  font-weight: 400
+
+  &--visual
+    border-color: $color-visual
+
+  &--front-end
+    border-color: $color-frontend
+
+  &--ux
+    border-color: $color-ux
