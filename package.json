@@ -1,5 +1,5 @@
 {
   "scripts": {
-    "watch": "sass --watch style.sass style.css"
+    "watch": "sass --watch style/style.sass style/style.css"
   }
 }

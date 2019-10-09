@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <title>Solarium</title>
   </head>
   <body>
@@ -15,19 +15,48 @@
       <div class="pref-question">
         <h2 class="question-main">Mijn voorkeur ligt bij...</h2>
         <div class="pref-question__options">
-          <button class="pref-question__option pref-question__option--visual">
-            Visual design
-          </button>
           <button
             class="pref-question__option pref-question__option--front-end"
           >
             Front-end
+            <div></div>
+          </button>
+          <button class="pref-question__option pref-question__option--visual">
+            Visual design
           </button>
           <button class="pref-question__option pref-question__option--ux">
             User experience
           </button>
         </div>
+        <div class="slidecontainer">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value="10"
+            class="slider"
+            id="myRange"
+          />
+        </div>
+
+        <div id="estimatedMoney">0</div>
       </div>
     </main>
+
+    <footer>
+      <div class="prevQuestion">
+        <p>< Vorige</p>
+        <h4>Wat is je CMD voorkeur</h4>
+      </div>
+
+      <div class="nextQuestion">
+        <p>> Volgende</p>
+        <h4>Wat wil je verdienen</h4>
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
