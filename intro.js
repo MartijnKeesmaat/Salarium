@@ -1,4 +1,5 @@
 const choice = document.querySelector('.pref-question__option--front-end'),
+  choiceText = document.querySelector('.pref-question__option--front-end span'),
   nonChoice1 = document.querySelector('.pref-question__option--visual'),
   nonChoice2 = document.querySelector('.pref-question__option--ux'),
   choiceFill = document.querySelector('.pref-question__option--front-end div'),
@@ -42,7 +43,7 @@ tl.to(
 );
 
 tl.to(choiceFill, 1.4, {
-  width: '40%',
+  width: '26%',
   ease: Power2.easeOut
 });
 
@@ -53,7 +54,7 @@ tl.to(voiceOver, 0.7, {
 });
 
 function chacha() {
-  voiceOver.textContent = '42% van de CMD’ers zeiden hetzelfde';
+  voiceOver.textContent = '26.5% van de CMD’ers zeiden hetzelfde';
 }
 
 tl.to(voiceOver, 0.7, {
@@ -70,6 +71,7 @@ tl.to(voiceOver, 0.7, {
 
 function cheche() {
   voiceOver.textContent = 'Wat zou je willen verdienen per maand';
+  choiceText.textContent = 'Sleep de balk voor meer geld';
 }
 
 tl.to(choiceFill, 0.7, {

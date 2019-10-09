@@ -5,12 +5,96 @@ html {
   font-size: 16px;
 }
 
+.avgSalary .question-main {
+  margin-bottom: 28.125rem;
+}
+
+.slider-section {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+}
+
+.slider-section--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.avgSalary__graph {
+  position: fixed;
+  width: 650px;
+  height: 550px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  width: calc(100% - 35px);
+  margin-left: 35px;
+  height: 550px;
+  padding-top: 15px;
+}
+
+.bar {
+  flex: 1;
+  height: 0%;
+  margin-right: 10px;
+  background: #F4EFEF;
+}
+
+.avgSalary__x {
+  position: absolute;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  left: -30px;
+  bottom: 0;
+  padding-bottom: 50px;
+  height: 550px;
+  opacity: 0;
+  z-index: 1;
+  transform: translateX(-10px);
+}
+.avgSalary__x p {
+  margin: 0;
+}
+
+.avgSalary__borders {
+  width: calc(100% - 30px);
+  height: 98.5%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  padding-bottom: 40px;
+  margin-left: 30px;
+  transform: translateX(-10px);
+  opacity: 0;
+}
+.avgSalary__borders div {
+  background: #D9CEFF;
+  width: 100%;
+  height: 2px;
+  margin: 10px 0;
+  opacity: 0.6;
+}
+
 * {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 header {
   position: fixed;
+  padding: 30px 50px;
 }
 
 main {
