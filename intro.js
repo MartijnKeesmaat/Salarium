@@ -10,6 +10,23 @@ const choice = document.querySelector('.pref-question__option--front-end'),
 var tl = new TimelineMax();
 tl.pause();
 
+function updateVoiceOver(text) {
+  tl.to(voiceOver, 0.7, {
+    autoAlpha: 0,
+    ease: Power2.easeOut,
+    onComplete: chacha
+  });
+
+  function chacha() {
+    voiceOver.textContent = text;
+  }
+
+  tl.to(voiceOver, 0.7, {
+    autoAlpha: 1,
+    ease: Power2.easeOut
+  });
+}
+
 choice.addEventListener('click', go, false);
 function go() {
   tl.play();
@@ -47,20 +64,7 @@ tl.to(choiceFill, 1.4, {
   ease: Power2.easeOut
 });
 
-tl.to(voiceOver, 0.7, {
-  autoAlpha: 0,
-  ease: Power2.easeOut,
-  onComplete: chacha
-});
-
-function chacha() {
-  voiceOver.textContent = '26.5% van de CMD’ers zeiden hetzelfde';
-}
-
-tl.to(voiceOver, 0.7, {
-  autoAlpha: 1,
-  ease: Power2.easeOut
-});
+updateVoiceOver('26.5% van de CMD’ers zeiden hetzelfde');
 
 tl.to(voiceOver, 0.7, {
   autoAlpha: 0,

@@ -1,6 +1,8 @@
 const bar = document.querySelectorAll('.bar');
 const avgSalaryX = document.querySelector('.avgSalary__x');
 const avgSalaryBorders = document.querySelector('.avgSalary__borders');
+const voiceOver = document.querySelector('.avgSalary .question-main');
+const avgAmsterdam = document.querySelector('.avg-amsterdam');
 
 const barValues = [
   70,
@@ -31,6 +33,23 @@ const barValues = [
 var tl = new TimelineMax();
 // tl.pause();
 
+function updateVoiceOver(text) {
+  tl.to(voiceOver, 0.7, {
+    autoAlpha: 0,
+    ease: Power2.easeOut,
+    onComplete: updateText
+  });
+
+  function updateText() {
+    voiceOver.textContent = text;
+  }
+
+  tl.to(voiceOver, 0.7, {
+    autoAlpha: 1,
+    ease: Power2.easeOut
+  });
+}
+
 bar.forEach(function(index, i) {
   tl.to(
     bar[i],
@@ -55,4 +74,16 @@ tl.to(avgSalaryBorders, 0.6, {
   ease: Power2.easeOut
 });
 
-// TweenMax.staggerTo();
+tl.to(bar[3], 0.6, {
+  backgroundColor: '#44D7B6',
+  ease: Power2.easeOut
+});
+
+tl.to(avgAmsterdam, 1, {
+  autoAlpha: 1,
+  width: '96%',
+  delay: 1,
+  ease: Power2.easeOut,
+  onComplete: updateVoiceOver,
+  onCompleteParams: ['Dit is het gemiddelde inkomen in Amsterdam']
+});

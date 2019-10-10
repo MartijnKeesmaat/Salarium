@@ -1,0 +1,64 @@
+.work-experience
+
+  .question-main
+    max-width: 600px
+    margin-bottom: 400px
+
+.work-experience__bar
+  position: fixed
+  bottom: 0
+  left: 0
+  right: 0
+
+  display: flex
+  justify-content: center
+  align-items: center
+
+  width: 450px
+  margin: 0 auto
+
+  background: $color-frontend
+  height: 0
+  visibility: hidden
+
+  h3
+    font-size: pxRem(30px)
+    color: rgba(#1C264A, .4)
+
+.work-experience__bar1
+  visibility: visible
+  height: 320px
+  z-index: 3
+
+.work-experience__bar2
+  background: #3ABDA0
+  z-index: 2
+
+.work-experience__bar3
+  background: #2C9780
+  z-index: 1
+
+.work-experience__overview
+  position: absolute
+  right: -250px
+  top: 50%
+  opacity: 0
+  visibility: hidden
+
+  h4
+    margin-bottom: 3px
+
+  p
+    margin: 0
+
+.work-experience__overview-group
+  position: relative
+
+  &:nth-child(1)
+    top: -73px
+
+  &:nth-child(2)
+    top: -26px
+
+  &:nth-child(3)
+    top: 66px
