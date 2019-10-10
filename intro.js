@@ -56,11 +56,11 @@ tl.to(
     width: '654px',
     ease: Power2.easeOut
   },
-  '-=0.5'
+  '-=0.7'
 );
 
 tl.to(choiceFill, 1.4, {
-  width: '26%',
+  width: '30%',
   ease: Power2.easeOut
 });
 
@@ -74,7 +74,7 @@ tl.to(voiceOver, 0.7, {
 });
 
 function cheche() {
-  voiceOver.textContent = 'Wat zou je willen verdienen per maand';
+  voiceOver.textContent = 'Wat zou je willen verdienen per maand?';
   choiceText.textContent = 'Sleep de balk voor meer geld';
 }
 

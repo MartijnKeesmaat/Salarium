@@ -87,7 +87,7 @@ html {
 
 .avg-amsterdam {
   position: absolute;
-  top: 100px;
+  top: 214px;
   width: calc(100% - 35px);
   margin-left: 35px;
   width: 60%;
@@ -146,7 +146,6 @@ html {
 
 .work-experience__bar1 {
   visibility: visible;
-  height: 320px;
   z-index: 3;
 }
 
@@ -185,6 +184,11 @@ html {
 }
 .work-experience__overview-group:nth-child(3) {
   top: 66px;
+}
+
+.work-experience .question-main {
+  opacity: 0;
+  visibility: hidden;
 }
 
 .city-view {

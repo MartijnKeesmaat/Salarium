@@ -76,14 +76,14 @@ tl2.to(avgSalaryBorders, 0.6, {
 
 tl2.to(bar[3], 0.6, {
   backgroundColor: '#44D7B6',
-  ease: Power2.easeOut
+  ease: Power2.easeOut,
+  onComplete: updateVoiceOver,
+  onCompleteParams: ['Dit is het gemiddelde inkomen in Amsterdam']
 });
 
 tl2.to(avgAmsterdam, 1, {
   autoAlpha: 1,
   width: '96%',
   delay: 1,
-  ease: Power2.easeOut,
-  onComplete: updateVoiceOver,
-  onCompleteParams: ['Dit is het gemiddelde inkomen in Amsterdam']
+  ease: Power2.easeOut
 });

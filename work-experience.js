@@ -45,13 +45,23 @@ function updateVoiceOverAndPrice(text, price) {
   });
 }
 
+tl3.to(ui.workExperienceBar, 0.8, {
+  height: 320,
+  ease: Power2.easeOut
+});
+
+tl3.to(ui.voiceOver, 0.4, {
+  autoAlpha: 1,
+  ease: Power2.easeOut
+});
+
 tl3.to(ui.voiceOver, 0.4, {
   delay: 1.8,
   autoAlpha: 0,
   ease: Power2.easeOut,
   onComplete: function() {
     ui.voiceOver.textContent =
-      'Maar, als je begint als Junior dan verdien je minder';
+      'Maar, als je begint als Junior verdien je minder';
   }
 });
 
@@ -86,7 +96,7 @@ tl3.to(ui.voiceOver, 0.4, {
   ease: Power2.easeOut,
   onComplete: function() {
     ui.voiceOver.textContent =
-      'Werk je drie jaar door dan verhoog je dit met €1250';
+      'Werk je drie jaar door dan verhoog je dit met €600';
   }
 });
 
@@ -121,7 +131,7 @@ tl3.to(ui.voiceOver, 0.4, {
   ease: Power2.easeOut,
   onComplete: function() {
     ui.voiceOver.textContent =
-      'En als je 6 jaar doorwerkt verhoog je het met €2400';
+      'En als je 6 jaar doorwerkt verhoog je het met €2200';
   }
 });
 
@@ -176,11 +186,6 @@ tl3.to(ui.workExperienceBar, 1.5, {
   height: 280,
   ease: Power2.easeOut
 });
-
-// tl3.to(ui.salary, 0.4, {
-//   autoAlpha: 1,
-//   ease: Power2.easeOut
-// });
 
 tl3.to(ui.workExperienceBar2, 1.3, {
   height: 340,
