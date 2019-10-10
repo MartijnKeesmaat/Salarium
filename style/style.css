@@ -295,9 +295,9 @@ html {
 }
 
 .tooltip__value {
-  font-size: 22px;
+  font-size: 26px;
   color: #47D7B7;
-  margin: 7px 0;
+  margin: 5px 0;
 }
 
 .tooltip__sub-title {
