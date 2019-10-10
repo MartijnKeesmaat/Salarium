@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Muli:400,700,800&display=swap");
 html {
   font-family: "Muli", sans-serif;
@@ -184,6 +185,84 @@ html {
 }
 .work-experience__overview-group:nth-child(3) {
   top: 66px;
+}
+
+.city-view {
+  left: 200px;
+}
+.city-view h2 {
+  max-width: 400px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.city-view__map {
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.marks {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mark {
+  position: fixed;
+  background: #47D7B7;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.mark1 {
+  width: 2.8125rem;
+  height: 2.8125rem;
+  top: 227px;
+  right: 1185px;
+}
+
+.mark2 {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 229px;
+  right: 1133px;
+}
+
+.mark3 {
+  width: 2.1875rem;
+  height: 2.1875rem;
+  top: 231px;
+  right: 1085px;
+}
+
+.city-view__options {
+  font-size: 1.0625rem;
+  color: #1C264A;
+  letter-spacing: 0.4;
+  font-weight: 300;
+  padding-left: 25px;
+  list-style: none;
+}
+.city-view__options li {
+  margin-bottom: 10px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+.city-view__options li:hover {
+  color: #47D7B7;
+}
+.city-view__options li::before {
+  content: "•";
+  color: #47D7B7;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  padding-bottom: 4px;
 }
 
 * {

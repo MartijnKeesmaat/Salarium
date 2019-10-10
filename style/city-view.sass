@@ -1,0 +1,69 @@
+.city-view
+  left: 200px
+
+  h2
+    max-width: 400px
+    margin-bottom: 20px
+    font-size: pxRem(40px)
+    text-align: left
+
+.city-view__map
+  height: 100vh
+  position: fixed
+  right: 0
+  top: 0
+  z-index: -1
+
+.marks
+  display: flex
+  align-items: center
+  margin-bottom: 10px
+
+.mark
+  position: fixed
+  background: $color-frontend
+  border-radius: 50%
+  margin-right: 10px
+
+.mark1
+  width: pxRem(45px)
+  height: pxRem(45px)
+  top: 227px
+  right: 1185px
+
+.mark2
+  width: pxRem(40px)
+  height: pxRem(40px)
+  top: 229px
+  right: 1133px
+
+.mark3
+  width: pxRem(35px)
+  height: pxRem(35px)
+  top: 231px
+  right: 1085px
+
+.city-view__options
+  font-size: pxRem(17px)
+  color: #1C264A
+  letter-spacing: 0.4
+  font-weight: 300
+  padding-left: 25px
+  list-style: none
+
+  li
+    margin-bottom: 10px
+    transition: .3s all ease
+    cursor: pointer
+
+    &:hover
+      color: $color-frontend
+
+    &::before
+      content: "\2022"
+      color: $color-frontend
+      font-weight: bold
+      display: inline-block
+      width: 1em
+      margin-left: -1em
+      padding-bottom: 4px
