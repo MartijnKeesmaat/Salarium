@@ -1,4 +1,5 @@
 const theOthers = document.querySelectorAll('.city-view__options li');
+const tooltips = document.querySelectorAll('.tooltip');
 
 const mark1 = document.querySelector('.mark1');
 const mark2 = document.querySelector('.mark2');
@@ -15,6 +16,14 @@ var tl4 = new TimelineMax();
 
 function mostJobs(e) {
   theOthers.forEach(el => (el.style.color = '#1E2A55'));
+
+  tooltips.forEach(el => {
+    tl4.to(el, 0.1, {
+      autoAlpha: 0,
+      ease: Power2.easeOut
+    });
+  });
+
   e.target.style.color = '#44D7B6';
 
   tl4.to(mark3, 0.9, {
@@ -44,11 +53,22 @@ function mostJobs(e) {
     },
     '-=0.65'
   );
+  tl4.to(tooltips[2], 0.9, {
+    autoAlpha: 1,
+    ease: Power2.easeOut
+  });
 }
 
 function mostEarned(e) {
   theOthers.forEach(el => (el.style.color = '#1E2A55'));
   e.target.style.color = '#44D7B6';
+
+  tooltips.forEach(el => {
+    tl4.to(el, 0.1, {
+      autoAlpha: 0,
+      ease: Power2.easeOut
+    });
+  });
 
   tl4.to(mark3, 0.9, {
     right: 620,
@@ -77,11 +97,22 @@ function mostEarned(e) {
     },
     '-=0.65'
   );
+  tl4.to(tooltips[0], 0.9, {
+    autoAlpha: 1,
+    ease: Power2.easeOut
+  });
 }
 
 function leastEarned(e) {
   theOthers.forEach(el => (el.style.color = '#1E2A55'));
   e.target.style.color = '#44D7B6';
+
+  tooltips.forEach(el => {
+    tl4.to(el, 0.1, {
+      autoAlpha: 0,
+      ease: Power2.easeOut
+    });
+  });
 
   tl4.to(mark3, 0.9, {
     right: 360,
@@ -110,4 +141,9 @@ function leastEarned(e) {
     },
     '-=0.65'
   );
+
+  tl4.to(tooltips[1], 0.9, {
+    autoAlpha: 1,
+    ease: Power2.easeOut
+  });
 }

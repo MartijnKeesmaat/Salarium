@@ -46,7 +46,7 @@ function updateVoiceOverAndPrice(text, price) {
 }
 
 tl3.to(ui.voiceOver, 0.4, {
-  delay: 3,
+  delay: 1.8,
   autoAlpha: 0,
   ease: Power2.easeOut,
   onComplete: function() {
@@ -81,7 +81,7 @@ tl3.to(ui.salary, 0.4, {
 // -------
 
 tl3.to(ui.voiceOver, 0.4, {
-  delay: 3,
+  delay: 1.8,
   autoAlpha: 0,
   ease: Power2.easeOut,
   onComplete: function() {
@@ -117,7 +117,7 @@ tl3.to(ui.salary, 0.4, {
 
 tl3.to(ui.voiceOver, 0.4, {
   autoAlpha: 0,
-  delay: 3,
+  delay: 1.8,
   ease: Power2.easeOut,
   onComplete: function() {
     ui.voiceOver.textContent =
@@ -152,7 +152,7 @@ tl3.to(ui.salary, 0.4, {
 
 tl3.to(ui.voiceOver, 0.4, {
   autoAlpha: 0,
-  delay: 3,
+  delay: 1.8,
   ease: Power2.easeOut,
   onComplete: function() {
     ui.voiceOver.textContent = 'In overzicht';

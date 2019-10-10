@@ -67,3 +67,70 @@
       width: 1em
       margin-left: -1em
       padding-bottom: 4px
+
+// .tooltips
+
+.tooltip
+  position: fixed
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-direction: column
+
+  width: 145px
+  height: 103px
+  padding-left: 35px
+
+  background: #FCFCFC
+  border-radius: 3px
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.1)
+
+  opacity: 0
+  visibility: hidden
+
+  &:before
+    content: "\A"
+    border-style: solid
+    border-width: 10px 10px 10px 0
+    border-color: transparent #FCFCFC transparent transparent
+    position: absolute
+    left: -10px
+
+.tooltip__titel
+  font-size: 15px
+  margin: 0
+
+.tooltip__value
+  font-size: 22px
+  color: $color-frontend
+  margin: 7px 0
+
+.tooltip__sub-title
+  font-size: 11px
+  text-transform: uppercase
+  margin: 0
+  color: rgba(#22293D, .6)
+
+.tooltip-1
+  right: 270px
+  top: 600px
+
+  &:before
+    left: initial
+    right: -10px
+    top: 15px
+    transform: rotate(180deg)
+
+.tooltip-2
+  right: 265px
+  top: 280px
+
+  &:before
+    left: initial
+    right: -10px
+    top: 25px
+    transform: rotate(180deg)
+
+.tooltip-3
+  right: 275px
+  top: 370px
