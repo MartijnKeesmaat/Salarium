@@ -7,10 +7,10 @@ const ui = {
   workExperienceOverview: document.querySelector('.work-experience__overview')
 };
 
-var tl = new TimelineMax();
+var tl3 = new TimelineMax();
 
 function updateVoiceOver(text) {
-  tl.to(ui.voiceOver, 0.4, {
+  tl3.to(ui.voiceOver, 0.4, {
     autoAlpha: 0,
     ease: Power2.easeOut,
     onComplete: updateText
@@ -20,7 +20,7 @@ function updateVoiceOver(text) {
     ui.voiceOver.textContent = text;
   }
 
-  tl.to(ui.voiceOver, 0.4, {
+  tl3.to(ui.voiceOver, 0.4, {
     autoAlpha: 1,
     ease: Power2.easeOut
   });
@@ -29,7 +29,7 @@ function updateVoiceOver(text) {
 function updateVoiceOverAndPrice(text, price) {
   updateVoiceOver(text);
 
-  tl.to(ui.salary, 0.4, {
+  tl3.to(ui.salary, 0.4, {
     autoAlpha: 0,
     ease: Power2.easeOut,
     onComplete: updateText
@@ -39,13 +39,13 @@ function updateVoiceOverAndPrice(text, price) {
     ui.salary.textContent = price;
   }
 
-  tl.to(ui.salary, 0.4, {
+  tl3.to(ui.salary, 0.4, {
     autoAlpha: 1,
     ease: Power2.easeOut
   });
 }
 
-tl.to(ui.voiceOver, 0.4, {
+tl3.to(ui.voiceOver, 0.4, {
   delay: 3,
   autoAlpha: 0,
   ease: Power2.easeOut,
@@ -55,12 +55,12 @@ tl.to(ui.voiceOver, 0.4, {
   }
 });
 
-tl.to(ui.voiceOver, 0.4, {
+tl3.to(ui.voiceOver, 0.4, {
   autoAlpha: 1,
   ease: Power2.easeOut
 });
 
-tl.to(ui.salary, 0.4, {
+tl3.to(ui.salary, 0.4, {
   autoAlpha: 0,
   ease: Power2.easeOut,
   onComplete: function() {
@@ -68,19 +68,19 @@ tl.to(ui.salary, 0.4, {
   }
 });
 
-tl.to(ui.workExperienceBar, 1.5, {
+tl3.to(ui.workExperienceBar, 1.5, {
   height: 280,
   ease: Power2.easeOut
 });
 
-tl.to(ui.salary, 0.4, {
+tl3.to(ui.salary, 0.4, {
   autoAlpha: 1,
   ease: Power2.easeOut
 });
 
 // -------
 
-tl.to(ui.voiceOver, 0.4, {
+tl3.to(ui.voiceOver, 0.4, {
   delay: 3,
   autoAlpha: 0,
   ease: Power2.easeOut,
@@ -90,12 +90,12 @@ tl.to(ui.voiceOver, 0.4, {
   }
 });
 
-tl.to(ui.voiceOver, 0.4, {
+tl3.to(ui.voiceOver, 0.4, {
   autoAlpha: 1,
   ease: Power2.easeOut
 });
 
-tl.to(ui.salary, 0.4, {
+tl3.to(ui.salary, 0.4, {
   autoAlpha: 0,
   ease: Power2.easeOut,
   onComplete: function() {
@@ -103,19 +103,19 @@ tl.to(ui.salary, 0.4, {
   }
 });
 
-tl.to(ui.workExperienceBar, 1.5, {
+tl3.to(ui.workExperienceBar, 1.5, {
   height: 340,
   ease: Power2.easeOut
 });
 
-tl.to(ui.salary, 0.4, {
+tl3.to(ui.salary, 0.4, {
   autoAlpha: 1,
   ease: Power2.easeOut
 });
 
 // -------
 
-tl.to(ui.voiceOver, 0.4, {
+tl3.to(ui.voiceOver, 0.4, {
   autoAlpha: 0,
   delay: 3,
   ease: Power2.easeOut,
@@ -125,12 +125,12 @@ tl.to(ui.voiceOver, 0.4, {
   }
 });
 
-tl.to(ui.voiceOver, 0.4, {
+tl3.to(ui.voiceOver, 0.4, {
   autoAlpha: 1,
   ease: Power2.easeOut
 });
 
-tl.to(ui.salary, 0.4, {
+tl3.to(ui.salary, 0.4, {
   autoAlpha: 0,
   ease: Power2.easeOut,
   onComplete: function() {
@@ -138,19 +138,19 @@ tl.to(ui.salary, 0.4, {
   }
 });
 
-tl.to(ui.workExperienceBar, 1.5, {
+tl3.to(ui.workExperienceBar, 1.5, {
   height: 500,
   ease: Power2.easeOut
 });
 
-tl.to(ui.salary, 0.4, {
+tl3.to(ui.salary, 0.4, {
   autoAlpha: 1,
   ease: Power2.easeOut
 });
 
 // ------
 
-tl.to(ui.voiceOver, 0.4, {
+tl3.to(ui.voiceOver, 0.4, {
   autoAlpha: 0,
   delay: 3,
   ease: Power2.easeOut,
@@ -159,12 +159,12 @@ tl.to(ui.voiceOver, 0.4, {
   }
 });
 
-tl.to(ui.voiceOver, 0.4, {
+tl3.to(ui.voiceOver, 0.4, {
   autoAlpha: 1,
   ease: Power2.easeOut
 });
 
-tl.to(ui.salary, 0.4, {
+tl3.to(ui.salary, 0.4, {
   autoAlpha: 0,
   ease: Power2.easeOut,
   onComplete: function() {
@@ -172,29 +172,29 @@ tl.to(ui.salary, 0.4, {
   }
 });
 
-tl.to(ui.workExperienceBar, 1.5, {
+tl3.to(ui.workExperienceBar, 1.5, {
   height: 280,
   ease: Power2.easeOut
 });
 
-// tl.to(ui.salary, 0.4, {
+// tl3.to(ui.salary, 0.4, {
 //   autoAlpha: 1,
 //   ease: Power2.easeOut
 // });
 
-tl.to(ui.workExperienceBar2, 1.3, {
+tl3.to(ui.workExperienceBar2, 1.3, {
   height: 340,
   autoAlpha: 1,
   ease: Power2.easeOut
 });
 
-tl.to(ui.workExperienceBar3, 1.3, {
+tl3.to(ui.workExperienceBar3, 1.3, {
   height: 500,
   autoAlpha: 1,
   ease: Power2.easeOut
 });
 
-tl.to(ui.workExperienceOverview, 1, {
+tl3.to(ui.workExperienceOverview, 1, {
   autoAlpha: 1,
   ease: Power2.easeOut
 });

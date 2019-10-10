@@ -12,7 +12,7 @@
       <h2>Solarium</h2>
     </header>
     <main>
-      <section class="slider-section pref-question">
+      <section class="slider-section slider-section--active pref-question">
         <h2 class="question-main">Mijn CMD voorkeur ligt bij...</h2>
         <div class="pref-question__options">
           <button
@@ -41,133 +41,26 @@
 
         <div id="estimatedMoney">0</div>
       </section>
-
-      <section class="slider-section avgSalary">
-        <h2 class="question-main">Dit zeiden andere CMD’ers.</h2>
-
-        <div class="avgSalary__graph">
-          <div class="avgSalary__x">
-            <p>€6000</p>
-            <p>€5250</p>
-            <p>€4500</p>
-            <p>€3750</p>
-            <p>€3000</p>
-            <p>€2250</p>
-            <p>€1500</p>
-            <p>€750</p>
-          </div>
-
-          <div class="avgSalary__borders">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-
-          <div class="bars">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-
-          <div class="avg-amsterdam">
-            <div class="avg-amsterdam__line"></div>
-            <div class="avg-amsterdam__dot"></div>
-            <p class="avg-amsterdam__text">Je kan 350 euro meer verdienen</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="slider-section work-experience">
-        <h2 class="question-main">
-          Dit is het gemmidelde salaris in Amsterdam
-        </h2>
-        <div class="work-experience__bar work-experience__bar1">
-          <h3>€3250,-</h3>
-        </div>
-        <div class="work-experience__bar work-experience__bar2">
-          <h3>€3250,-</h3>
-        </div>
-        <div class="work-experience__bar work-experience__bar3">
-          <h3>€3250,-</h3>
-        </div>
-
-        <div class="work-experience__overview">
-          <div class="work-experience__overview-group">
-            <h4>€5000,-</h4>
-            <p>6+ jaar ervaring</p>
-          </div>
-          <div class="work-experience__overview-group">
-            <h4>€3400,-</h4>
-            <p>3+ jaar ervaring</p>
-          </div>
-          <div class="work-experience__overview-group">
-            <h4>€2800,-</h4>
-            <p>0+ jaar ervaring</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="slider-section slider-section--active city-view">
-        <div class="marks">
-          <div class="mark mark1"></div>
-          <div class="mark mark2"></div>
-          <div class="mark mark3"></div>
-        </div>
-
-        <h2 class="question-main">
-          Deze steden vallen op voor front-enders
-        </h2>
-
-        <ul class="city-view__options">
-          <li class="most-earned">Waar verdien je het meeste</li>
-          <li class="least-earned">Waar wil je niet werken</li>
-          <li class="most-jobs">Waar zijn de meeste banen</li>
-        </ul>
-
-        <img class="city-view__map" src="map.png" alt="" />
-      </section>
     </main>
 
     <footer>
       <div class="prevQuestion">
-        <p>< Vorige</p>
-        <h4>Wat is je CMD voorkeur</h4>
+        <!-- <a href="index.html">
+          <p>< Vorige</p>
+          <h4>Wat is je CMD voorkeur</h4>
+        </a> -->
       </div>
 
-      <!-- <div class="nextQuestion">
-        <p>> Volgende</p>
-        <h4>Wat wil je verdienen</h4>
-      </div> -->
+      <div class="nextQuestion">
+        <a href="2e.html">
+          <p>> Volgende</p>
+          <h4>In context</h4>
+        </a>
+      </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
-    <!-- <script src="intro.js"></script> -->
-    <!-- <script src="bars.js"></script> -->
-    <!-- <script src="work-experience.js"></script> -->
-    <script src="city-view.js"></script>
+    <script src="intro.js"></script>
   </body>
 </html>

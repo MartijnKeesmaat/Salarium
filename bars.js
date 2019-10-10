@@ -30,11 +30,11 @@ const barValues = [
   48
 ];
 
-var tl = new TimelineMax();
-// tl.pause();
+var tl2 = new TimelineMax();
+// tl2.pause();
 
 function updateVoiceOver(text) {
-  tl.to(voiceOver, 0.7, {
+  tl2.to(voiceOver, 0.7, {
     autoAlpha: 0,
     ease: Power2.easeOut,
     onComplete: updateText
@@ -44,14 +44,14 @@ function updateVoiceOver(text) {
     voiceOver.textContent = text;
   }
 
-  tl.to(voiceOver, 0.7, {
+  tl2.to(voiceOver, 0.7, {
     autoAlpha: 1,
     ease: Power2.easeOut
   });
 }
 
 bar.forEach(function(index, i) {
-  tl.to(
+  tl2.to(
     bar[i],
     1.2,
     {
@@ -62,24 +62,24 @@ bar.forEach(function(index, i) {
   );
 });
 
-tl.to(avgSalaryX, 0.6, {
+tl2.to(avgSalaryX, 0.6, {
   autoAlpha: 0.3,
   x: 0,
   ease: Power2.easeOut
 });
 
-tl.to(avgSalaryBorders, 0.6, {
+tl2.to(avgSalaryBorders, 0.6, {
   autoAlpha: 0.3,
   x: 0,
   ease: Power2.easeOut
 });
 
-tl.to(bar[3], 0.6, {
+tl2.to(bar[3], 0.6, {
   backgroundColor: '#44D7B6',
   ease: Power2.easeOut
 });
 
-tl.to(avgAmsterdam, 1, {
+tl2.to(avgAmsterdam, 1, {
   autoAlpha: 1,
   width: '96%',
   delay: 1,

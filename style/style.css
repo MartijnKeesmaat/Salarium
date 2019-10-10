@@ -348,8 +348,16 @@ footer {
   padding: 0 50px;
   margin-bottom: 30px;
 }
+footer a {
+  text-decoration: none;
+}
+footer p {
+  color: #BCB6B6;
+  margin-bottom: 5px;
+}
 footer h4 {
   margin-top: 0;
+  color: #1C264A;
 }
 footer .nextQuestion {
   text-align: right;

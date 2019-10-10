@@ -11,19 +11,19 @@ mostEarnedBtn.addEventListener('click', mostEarned);
 leastEarnedBtn.addEventListener('click', leastEarned);
 mostJobsBtn.addEventListener('click', mostJobs);
 
-var tl = new TimelineMax();
+var tl4 = new TimelineMax();
 
 function mostJobs(e) {
   theOthers.forEach(el => (el.style.color = '#1E2A55'));
   e.target.style.color = '#44D7B6';
 
-  tl.to(mark3, 0.9, {
+  tl4.to(mark3, 0.9, {
     right: 680,
     top: 610,
     ease: Power2.easeOut
   });
 
-  tl.to(
+  tl4.to(
     mark2,
     0.9,
     {
@@ -34,7 +34,7 @@ function mostJobs(e) {
     '-=0.65'
   );
 
-  tl.to(
+  tl4.to(
     mark1,
     0.9,
     {
@@ -50,13 +50,13 @@ function mostEarned(e) {
   theOthers.forEach(el => (el.style.color = '#1E2A55'));
   e.target.style.color = '#44D7B6';
 
-  tl.to(mark3, 0.9, {
+  tl4.to(mark3, 0.9, {
     right: 620,
     top: 700,
     ease: Power2.easeOut
   });
 
-  tl.to(
+  tl4.to(
     mark2,
     0.9,
     {
@@ -67,7 +67,7 @@ function mostEarned(e) {
     '-=0.65'
   );
 
-  tl.to(
+  tl4.to(
     mark1,
     0.9,
     {
@@ -83,13 +83,13 @@ function leastEarned(e) {
   theOthers.forEach(el => (el.style.color = '#1E2A55'));
   e.target.style.color = '#44D7B6';
 
-  tl.to(mark3, 0.9, {
+  tl4.to(mark3, 0.9, {
     right: 360,
     top: 210,
     ease: Power2.easeOut
   });
 
-  tl.to(
+  tl4.to(
     mark2,
     0.9,
     {
@@ -100,7 +100,7 @@ function leastEarned(e) {
     '-=0.65'
   );
 
-  tl.to(
+  tl4.to(
     mark1,
     0.9,
     {
